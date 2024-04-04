@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Ancorpoint.sln"
+    "dotnet.defaultSolution": "Midterm.sln"
 }
