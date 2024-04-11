@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Snakes : MonoBehaviour
+public class coins : MonoBehaviour
 {
     public float speed = 5f;
 
