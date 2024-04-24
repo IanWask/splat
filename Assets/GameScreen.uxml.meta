@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c9e56be971df21347b176ab8257e995c
+guid: 73fe93fee1b83b940a0e19c65de87f19
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,5 +7,4 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 12388, guid: 0000000000000000e000000000000000, type: 0}
-  disableValidation: 0
+  script: {fileID: 13804, guid: 0000000000000000e000000000000000, type: 0}
