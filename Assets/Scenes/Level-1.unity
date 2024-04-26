@@ -250,6 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 2
   initialPosition: {x: -16.23, y: 18.77, z: 0}
+  startYPosition: 18.77
 --- !u!1 &339642300
 GameObject:
   m_ObjectHideFlags: 0

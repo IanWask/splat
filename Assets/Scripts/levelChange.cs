@@ -84,14 +84,16 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public int sceneBuildIndex; // The build index of the scene to load
-    public Vector3 initialPosition = new Vector3(0f, 0f, 0f); // Initial position on the first level
+    public Vector3 initialLevel1Position = new Vector3(-16.23f, 18.77f, 0f); // Initial position on the first level
+    public float startYPosition = 0f; // Predefined Y position for this level settable in Inspector
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player")) // Check if the collider is the player
         {
-            // Save the player's x position and a flag indicating the position is saved
+            // Save the player's x position and the predefined y position from the inspector
             PlayerPrefs.SetFloat("lastX", other.transform.position.x);
+            PlayerPrefs.SetFloat("startY", startYPosition);
             PlayerPrefs.SetInt("positionSaved", 1);
             PlayerPrefs.Save();
 
@@ -102,33 +104,31 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex != 1) // Assuming level 0 is the first level
+        int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        if (currentLevelIndex == 1) // Check if it's the first level
         {
-            // If not on the first level and the position has been saved, set the new position
-            if (PlayerPrefs.GetInt("positionSaved") == 1)
-            {
-                float lastX = PlayerPrefs.GetFloat("lastX");
-
-                GameObject player = GameObject.FindGameObjectWithTag("Player");
-                if (player != null)
-                {
-                    // Set the player's position to the saved x and a high y value to start at the top of the level
-                    player.transform.position = new Vector3(lastX, initialPosition.y, initialPosition.z);
-                }
-
-                // Reset the flag so it doesn't affect other scenes unintentionally
-                PlayerPrefs.SetInt("positionSaved", 0);
-                PlayerPrefs.Save();
-            }
-        }
-        else
-        {
-            // On the first level, set the player to the initial start position
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
-                player.transform.position = initialPosition;
+                // On the first level, set the player to the initial start position
+                player.transform.position = initialLevel1Position;
             }
+        }
+        else if (PlayerPrefs.GetInt("positionSaved") == 1)
+        {
+            float lastX = PlayerPrefs.GetFloat("lastX");
+            float startY = PlayerPrefs.GetFloat("startY");
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                // Set the player's position to the saved x and the specific y for this level
+                player.transform.position = new Vector3(lastX, startY, 0f);
+            }
+
+            // Reset the flag so it doesn't affect other scenes unintentionally
+            PlayerPrefs.SetInt("positionSaved", 0);
+            PlayerPrefs.Save();
         }
     }
 }
