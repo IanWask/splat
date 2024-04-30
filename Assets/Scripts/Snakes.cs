@@ -7,7 +7,7 @@ public class Snakes : MonoBehaviour
     private float topEdge;
 
     private void Start(){
-        topEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y + 75f;
+        topEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y + 150f;
     }
 
     private void Update(){
