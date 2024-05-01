@@ -3,6 +3,7 @@ using UnityEngine;
 public class Snakes : MonoBehaviour
 {
     public float speed = 5f;
+    public int value = 0;
 
     private float topEdge;
 
