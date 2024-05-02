@@ -497,3 +497,4 @@
 .plastic/4103ab3f-553a-4041-8a74-4203d7a0516d filter=lfs diff=lfs merge=lfs -text
 .plastic/c3a8c8d3-8a9f-4759-93ee-83f3dbdf6614 filter=lfs diff=lfs merge=lfs -text
 .plastic/3bceebb8-904d-4021-8561-5d80140aaffc filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text

@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
    public float maxWidth = 1f;
 
     private void OnEnable(){
+       
         InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
     }
 

@@ -22,14 +22,7 @@ public class PlayerScore : MonoBehaviour
         UpdateScoreUI();
     }
 
-    // Subtract points from the player's score
-    public void SubtractScore(int points)
-    {
-        score -= points;
-        // Optionally, you might want to add a check to ensure score doesn't go negative
-        UpdateScoreUI();
-    }
-
+    //
     // OnCollisionEnter2D is called when the player collides with another object
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,7 +36,7 @@ public class PlayerScore : MonoBehaviour
         {
             // Access the script component attached to the collided object and retrieve its public value variable
             int snakeValue = collision.gameObject.GetComponent<Snakes>().value;
-            SubtractScore(snakeValue);
+             AddScore(snakeValue );
         }
     }
 
