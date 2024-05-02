@@ -3,11 +3,12 @@ using UnityEngine;
 public class Snakes : MonoBehaviour
 {
     public float speed = 5f;
+    public int value = 0;
 
     private float topEdge;
 
     private void Start(){
-        topEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y + 75f;
+        topEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y + 300f;
     }
 
     private void Update(){
