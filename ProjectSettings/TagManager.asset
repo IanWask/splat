@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - Rectangle
+  - Right
+  - Left
   layers:
   - Default
   - TransparentFX
