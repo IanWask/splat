@@ -702,11 +702,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 53e5979a-8bf4-4e2b-bef0-8fcfb65ca25f
+  cloudProjectId: ff536b29-a69e-4471-9af3-11c2e8b08dce
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Midterm
-  organizationId: crumpledpaper22
+  projectName: Splat
+  organizationId: cc_struggles
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
