@@ -372,7 +372,11 @@ MonoBehaviour:
       m_Calls: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_text: PLAY
+=======
+  m_text: ' Endless OR Nightmare'
+>>>>>>> parent of e2104a8 (Name Change)
 =======
   m_text: ' Endless OR Nightmare'
 >>>>>>> parent of e2104a8 (Name Change)
@@ -407,9 +411,12 @@ MonoBehaviour:
     rgba: 4294967295
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_fontSize: 75
   m_fontSizeBase: 75
 =======
+=======
+>>>>>>> parent of e2104a8 (Name Change)
 =======
 >>>>>>> parent of e2104a8 (Name Change)
   m_fontSize: 51.6
@@ -1127,7 +1134,11 @@ MonoBehaviour:
       m_Calls: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_text: Button
+=======
+  m_text: Trials OR The Escape
+>>>>>>> parent of e2104a8 (Name Change)
 =======
   m_text: Trials OR The Escape
 >>>>>>> parent of e2104a8 (Name Change)
@@ -1162,9 +1173,12 @@ MonoBehaviour:
     rgba: 4294967295
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_fontSize: 24
   m_fontSizeBase: 24
 =======
+=======
+>>>>>>> parent of e2104a8 (Name Change)
 =======
 >>>>>>> parent of e2104a8 (Name Change)
   m_fontSize: 59.5
