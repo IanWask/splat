@@ -1,4 +1,0 @@
-repository "Splat-Backup@cc_struggles@cloud"
-  path "/"
-    br "/main"
-    co "/main"
