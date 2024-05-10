@@ -8,6 +8,8 @@ TagManager:
   - Rectangle
   - Right
   - Left
+  - Win
+  - Lava
   layers:
   - Default
   - TransparentFX
@@ -44,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4081294485
     locked: 0
