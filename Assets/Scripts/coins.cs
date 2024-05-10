@@ -8,13 +8,13 @@ public class coins : MonoBehaviour
     private float topEdge;
 
     private void Start(){
-        topEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y + 300f;
+        topEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y -1000f;
     }
 
     private void Update(){
-        transform.position += Vector3.up * speed * Time.deltaTime;
+        transform.position += Vector3.down * speed * Time.deltaTime;
 
-        if(transform.position.y >= topEdge){
+        if(transform.position.y <=topEdge){
         Destroy(gameObject);
     }
     }
