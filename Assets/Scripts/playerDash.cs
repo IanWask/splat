@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerDash : MonoBehaviour
 {
     // Dash settings
     private bool canDash = true; // Can the player dash?
